@@ -1,0 +1,372 @@
+{
+  "reseau": "리얼통신",
+  "warningMessageCount": 250,
+  "themeColor": "#007aff",
+  "themeColorTitle": "#f7f7f7",
+  "colors": [
+    "#EF5350",
+    "#EC407A",
+    "#AB47BC",
+    "#7E57C2",
+    "#5C6BC0",
+    "#42A5F5",
+    "#29B6F6",
+    "#26C6DA",
+    "#26A69A",
+    "#66BB6A",
+    "#9CCC65",
+    "#D4E157",
+    "#FFCA28",
+    "#FFA726",
+    "#FF7043",
+    "#8D6E63",
+    "#78909C"
+  ],
+  "useFormatNumberFrance": true,
+  "/Sentry/": "Enabling this option can help us to discover new bugs and solve them ASAP! (We beg you to keep this enabled, so we can help us each other as a community)",
+  "useSentryErroTracking": true,
+  "useWebRTCVocal": false,
+  "RTCConfig": {
+    "iceServers": [
+      {
+        "urls": [
+          "turn:barrax.needrp.net"
+        ],
+        "username": "gcphone",
+        "credential": "gcphone"
+      }
+    ]
+  },
+  "//": "REQUIRE https://github.com/citizenfx/screenshot-basic or set false",
+  "enableTakePhoto": true,
+  "fileUploadService_Url": "https://gcphone.herokuapp.com/uploads/upload",
+  "fileUploadService_Field": "image",
+  "background": {
+    "하얀 사막": "back001.jpg",
+    "노을길": "back002.jpg",
+    "산타 모니카 해변": "back003.jpg",
+    "노선 66": "color.jpg",
+    "클래식 도쿄": "humo.jpg",
+    "검은 행성": "iluminacion.jpg",
+    "아스트로 네온": "neon.jpg",
+    "밝은 행성": "oscuridad.jpg",
+    "야생 해변": "playa.jpg",
+    "겨울 풍경": "paisajes.jpg",
+    "도쿄 네온": "tokio.jpg",
+    "커스텀 배경": "URL"
+  },
+  "background_default": {
+    "label": "산타 모니카 해변",
+    "value": "back003.jpg"
+  },
+  "coque": {
+    "그레이": "grey.png",
+    "핑크": "pink.png",
+    "레드": "red.png",
+    "민트": "s8.png",
+    "블루": "blue.png",
+    "아이폰11": "no_cover.png"
+  },
+  "sonido": {
+    "아스트로노미아": "ring.ogg",
+    "사파에라": "safaera.ogg",
+    "벨라시아오": "bella_ciao.ogg",
+    "카사파펠": "casa_papel.ogg",
+    "아이폰11": "iphone_11.ogg",
+    "투사": "tusa.ogg",
+    "유혹": "xtentacion.ogg"
+  },
+  "coque_default": {
+    "label": "민트",
+    "value": "s8.png"
+  },
+  "sonido_default": {
+    "label": "카사파펠",
+    "value": "casa_papel.ogg"
+  },
+  "serviceCall": [],
+  "defaultContacts": [],
+  "apps": [
+    {
+      "name": "플레이어",
+      "ko_KR__name": "플레이어",
+      "icons": "/html/static/img/icons_app/contacts1.png",
+      "routeName": "player",
+      "inHomePage": true
+    },
+    {
+      "name": "차량",
+      "ko_KR__name": "차량",
+      "icons": "/html/static/img/icons_app/bourse.png",
+      "routeName": "vehicle",
+      "inHomePage": true
+    },
+    {
+      "name": "호출",
+      "ko_KR__name": "호출",
+      "icons": "/html/static/img/icons_app/call1.png",
+      "routeName": "servicecall",
+      "inHomePage": true,
+      "enabled": true
+    },
+    {
+      "name": "관리",
+      "ko_KR__name": "관리",
+      "icons": "/html/static/img/icons_app/9gag.png",
+      "routeName": "admin",
+      "inHomePage": true
+    },
+    {
+      "name": "경찰",
+      "ko_KR__name": "경찰",
+      "icons": "/html/static/img/icons_app/lsfd.png",
+      "routeName": "police",
+      "inHomePage": true
+    },
+    {
+      "name": "구급대",
+      "ko_KR__name": "구급대",
+      "icons": "/html/static/img/icons_app/lifeinvader11.png",
+      "routeName": "medical",
+      "inHomePage": true,
+      "enabled": true
+    },
+    {
+      "name": "뱅킹",
+      "ko_KR__name": "뱅킹",
+      "icons": "/html/static/img/icons_app/banco.png",
+      "routeName": "bank",
+      "inHomePage": true
+    },
+    {
+      "name": "연락처",
+      "ko_KR__name": "연락처",
+      "icons": "/html/static/img/icons_app/contacts.png",
+      "routeName": "contacts",
+      "inHomePage": true
+    },
+    {
+      "name": "설정",
+      "ko_KR__name": "설정",
+      "icons": "/html/static/img/icons_app/settings.png",
+      "routeName": "parametre",
+      "inHomePage": true
+    },
+    {
+      "name": "조직관리",
+      "ko_KR__name": "조직관리",
+      "icons": "/html/static/img/icons_app/tor1.png",
+      "routeName": "organ",
+      "inHomePage": true,
+      "enabled": true
+    },
+    {
+      "name": "트위터",
+      "ko_KR__name": "트위터",
+      "icons": "/html/static/img/icons_app/twitter.png",
+      "routeName": "twitter.splash",
+      "enabled": false
+    },
+    {
+      "name": "주식",
+      "ko_KR__name": "주식",
+      "icons": "/html/static/img/icons_app/bourse1.png",
+      "routeName": "bourse",
+      "enabled": true
+    },
+    {
+      "name": "카메라",
+      "ko_KR__name": "카메라",
+      "icons": "/html/static/img/icons_app/photo.png",
+      "routeName": "photo",
+      "enabled": true,
+      "inHomePage": true
+    },
+    {
+      "name": "단톡방",
+      "ko_KR__name": "단톡방",
+      "routeName": "notes",
+      "icons": "/html/static/img/icons_app/talk.png",
+      "enabled": true,
+      "inHomePage": true
+    },
+    {
+      "name": "계산기",
+      "ko_KR__name": "계산기",
+      "routeName": "calculator",
+      "icons": "/html/static/img/icons_app/calculadora.png",
+      "enabled": false,
+      "inHomePage": true
+    },
+    {
+      "name": "전화",
+      "ko_KR__name": "전화",
+      "icons": "/html/static/img/icons_app/call.png",
+      "routeName": "appels",
+      "inHomePage": true,
+      "isBottom": true
+    },
+    {
+      "name": "메세지",
+      "ko_KR__name": "메세지",
+      "icons": "/html/static/img/icons_app/sms.png",
+      "routeName": "messages",
+      "inHomePage": true,
+      "isBottom": true,
+      "puceRef": "nbMessagesUnread"
+    }
+  ],
+  "defaultLanguage": "ko_KR",
+  "language": {
+    "ko_KR": {
+      "NAME": "한국어",
+      "PHONE_WARNING_MESSAGE": "memento",
+      "PHONE_WARNING_MESSAGE_MESS": "news",
+      "CONFIRM": "확인",
+      "CANCEL": "취소",
+      "APP_ADMIN_TITLE": "관리앱",
+      "APP_PLAYER_TITLE": "플레이어앱",
+      "APP_VEHICLE_TITLE": "차량앱",
+      "APP_POLICE_TITLE": "경찰앱",
+      "APP_MEDICAL_TITLE": "구급대앱",
+      "APP_SERVICECALL_TITLE": "호출앱",
+      "APP_ORGAN_TITLE": "조직관리",
+      "APP_CONFIG_TITLE": "설정",
+      "APP_CONFIG_MY_MUNBER": "나의 번호",
+      "APP_CONFIG_WALLPAPER": "휴대폰 배경화면",
+      "APP_CONFIG_CASE": "휴대폰 케이스",
+      "APP_CONFIG_SOUND": "벨소리",
+      "APP_CONFIG_ZOOM": "확대",
+      "APP_CONFIG_VOLUME": "볼륨",
+      "APP_CONFIG_LANGUAGE": "언어",
+      "APP_CONFIG_MOUSE_SUPPORT": "마우스",
+      "APP_CONFIG_RESET": "초기화",
+      "APP_CONFIG_RESET_CONFIRM": "초기화 확인",
+      "APP_PHONE_CALL": "통화",
+      "APP_PHONE_DELETE": "삭제",
+      "APP_PHONE_DELETE_ALL": "모두 삭제",
+      "APP_PHONE_CANCEL": "취소",
+      "APP_PHONE_ADD": "연락처 추가",
+      "APP_PHONE_TITLE": "폰 번호",
+      "APP_PHONE_MENU_FAVORITES": "즐겨찾기",
+      "APP_PHONE_MENU_RECENTS": "최근 통화",
+      "APP_PHONE_MENU_CONTACTS": "연락처",
+      "APP_PHONE_ENTER_NUMBER": "번호 입력",
+      "APP_PHONE_NUMBER_HIDDEN": "Secret number",
+      "APP_PHONE_NUMBER_UNKNOWN": "알수없음",
+      "APP_PHONE_CALL_IGNORE": "무시",
+      "APP_PHONE_CALL_ANONYMOUS": "익명으로 전화하기",
+      "APP_CALCULATOR_TITLE": "계산기",
+      "APP_BANK_TITLE_BALANCE": "계좌 잔고",
+      "APP_BANK_BUTTON_TRANSFER": "이체",
+      "APP_BANK_BUTTON_CANCEL": "취소",
+      "APP_BANK_SALDO": "잔액",
+      "APP_BANK_VALUTA": "₩",
+      "APP_BANK_TO_NUMBER": "계좌번호",
+      "APP_BANK_AMOUNT": "금액",
+      "APP_BANK_TRANSFER": "전송",
+      "APP_BANK_CANCEL": "취소",
+      "APP_BOURSE_TITLE": "거래",
+      "APP_CONTACT_TITLE": "연락처 정보",
+      "APP_CONTACT_NEW": "연락처 추가",
+      "APP_CONTACT_EDIT": "연락처 수정",
+      "APP_CONTACT_SAVE": "저장",
+      "APP_CONTACT_CANCEL": "취소",
+      "APP_CONTACT_DELETE": "삭제",
+      "APP_CONTACT_LABEL_NAME": "성명",
+      "APP_CONTACT_LABEL_NUMBER": "연락처",
+      "APP_MESSAGE_TITLE": "메세지",
+      "APP_MESSAGE_NEW_MESSAGE": "새로운 메세지",
+      "APP_MESSAGE_ERASE_CONVERSATION": "삭제",
+      "APP_MESSAGE_ERASE_ALL_CONVERSATIONS": "모든 메세지 삭제",
+      "APP_MESSAGE_SEND_GPS": "Send GPS coupling",
+      "APP_MESSAGE_SET_GPS": "GPS position",
+      "APP_MESSAGE_ZOOM_IMG": "Enlarge",
+      "APP_MESSAGE_DELETE": "삭제",
+      "APP_MESSAGE_SMS": "내용",
+      "APP_MESSAGE_CONTACT_TITLE": "연락처",
+      "APP_MESSAGE_CONTRACT_ENTER_NUMBER": "받는사람 연락처",
+      "APP_MESSAGE_PLACEHOLDER_ENTER_MESSAGE": "보내기",
+      "APP_MESSAGE_SAVE_CONTACT": "연락처 저장",
+      "APP_DARKTCHAT_TITLE": "레딧",
+      "APP_DARKTCHAT_NEW_CHANNEL": "톡방 추가",
+      "APP_DARKTCHAT_DELETE_CHANNEL": "톡방 삭제",
+      "APP_DARKTCHAT_CANCEL": "취소",
+      "APP_DARKTCHAT_PLACEHOLDER_ENTER_MESSAGE": "메세지 입력",
+      "APP_NOTES_TITLE": "단톡방",
+      "APP_NOTES_NEW": "새로운 톡방",
+      "APP_NOTES_DELETE": "톡방 삭제",
+      "APP_NOTES_CANCEL": "취소",
+      "APP_TWITTER_NAME": "Twitter",
+      "APP_TWITTER_VIEW_TWITTER": "Twitter",
+      "APP_TWITTER_VIEW_TOP_TWEETS": "top tweets",
+      "APP_TWITTER_VIEW_TWEETER": "tweets",
+      "APP_TWITTER_VIEW_SETTING": "parameter",
+      "APP_TWITTER_NEW_ACCOUNT_USERNAME": "Username (>= 4)",
+      "APP_TWITTER_NEW_ACCOUNT_PASSWORD": "Password (>= 6)",
+      "APP_TWITTER_NEW_ACCOUNT_PASSWORD_CONFIRM": "Confirm password",
+      "APP_TWITTER_NEW_ACCOUNT_AVATAR": "URL of your avatar",
+      "APP_TWITTER_PLACEHOLDER_MESSAGE": "What's the matter with you?",
+      "APP_TWITTER_BUTTON_ACTION_TWEETER": "Tweeter",
+      "APP_TWITTER_ACCOUNT_LOGIN": "Log in to the website",
+      "APP_TWITTER_ACCOUNT_LOGOUT": "Disconnect from location",
+      "APP_TWITTER_ACCOUNT_PARAM": "My account",
+      "APP_TWITTER_ACCOUNT_AVATAR": "Changing the Avatar",
+      "APP_TWITTER_ACCOUNT_CHANGE_PASSWORD": "Change password",
+      "APP_TWITTER_ACCOUNT_NEW": "New account",
+      "APP_TWIITER_ACCOUNT_SAVE": "registration",
+      "APP_TWIITER_ACCOUNT_CREATE": "Create the account",
+      "APP_TWIITER_ACCOUNT_CANCEL": "abort",
+      "APP_TWITTER_ACCOUNT_USERNAME": "username",
+      "APP_TWITTER_ACCOUNT_PASSWORD": "password",
+      "APP_TWITTER_NOTIFICATION": "notification",
+      "APP_TWITTER_NOTIFICATION_WHEN": "To be notified",
+      "APP_TWITTER_NOTIFICATION_ALL": "All News",
+      "APP_TWITTER_NOTIFICATION_MENTION": "Just mention",
+      "APP_TWITTER_NOTIFICATION_NEVER": "Nobody",
+      "APP_TWITTER_NOTIFICATION_SOUND": "Play a sound",
+      "APP_TWITTER_NOTIFICATION_SOUND_YES": "Yes",
+      "APP_TWITTER_NOTIFICATION_SOUND_NO": "No",
+      "APP_TWITTER_NOTIF_ACCOUNT_CREATE_SUCCESS": "Your Twitter account has been created.",
+      "APP_TWITTER_NOTIF_ACCOUNT_CREATE_ERROR": "Your Twitter account could not be created (username already used?)",
+      "APP_TWITTER_NOTIF_LOGIN_SUCCESS": "You are connected to Twitter.",
+      "APP_TWITTER_NOTIF_LOGIN_ERROR": "Invalid account / passwords",
+      "APP_TWITTER_NOTIF_AVATAR_SUCCESS": "Your avatar has been changed!",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_SUCCESS": "Your password has been changed.",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_ERROR": "Oops.... Your password could not be changed.",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_MISS_MATCH": "Passwords do not match",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_LENGTH_ERROR": "Password too short",
+      "TIMEAGO": [
+        "현재시간",
+        [
+          "%s second ago",
+          "%s seconds ago"
+        ],
+        [
+          "%s minute ago",
+          "%s minutes ago"
+        ],
+        [
+          "%s hour ago",
+          "%s hours ago"
+        ],
+        [
+          "%s day ago",
+          "%s days ago"
+        ],
+        [
+          "%s week ago",
+          "%s weeks ago"
+        ],
+        [
+          "%s month ago",
+          "%s months ago"
+        ],
+        [
+          "%s year ago",
+          "%s years ago"
+        ]
+      ]
+    }
+  }
+}

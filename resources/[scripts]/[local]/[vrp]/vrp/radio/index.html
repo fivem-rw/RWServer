@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script>
+        var radioAudio;
+        
+        window.addEventListener('message', function(event) {
+            var item = event.data;
+            
+            if (item.playradio) {
+                if (radioAudio != null) {
+                    radioAudio.pause();
+                }
+                
+                radioAudio = new Audio(item.sound);
+                radioAudio.volume = 0.18;
+                radioAudio.play();
+            } else if (item.changevolume) {
+                if (radioAudio != null) {
+                    radioAudio.volume = item.volume;
+                }
+            } else if (item.stopradio) {
+                if (radioAudio != null) {
+                    radioAudio.pause();
+                }
+            }
+        });
+        </script>
+    </head>
+</html>

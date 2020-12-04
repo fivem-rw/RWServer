@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" crossorigin="anonymous"></script>
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-darkness/jquery-ui.css" rel = "stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+
+    <body style="background:none;">
+        <div class="container monitor monitor-claro">
+            <div class="monitor-topo">
+                <div class="row">
+                    <div class="col text-left">현재 창</div>
+                    <div class="col text-center" id="TempoSuperior"></div>
+                    <div class="col text-right" style="font-weight:normal;"><i class="far fa-moon" id="DarkMode"></i> <i class="fa fa-battery-full"></i> <i class="fa fa-volume-up" id="soundmade"></i> <i class="fa fa-power-off" id="exitProgram"></i> <i class="fa fa-xs fa-chevron-down"></i></div>
+                </div>
+            </div>
+            <div class="ChipTuner">
+                
+                <div class="fixed-top position-relative ChipTuner-top-bar">
+                    <div class="row">
+                        <div class="col"><span>튜닝도구 (ECU TOOL)</span></div>
+                        <div class="col text-right"><i class="fa fa-window-minimize"></i> <i class="fa fa-window-maximize"></i> <i class="fa fa-window-close" id="exitProgram"></i></div>
+                    </div>
+                </div><br>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-6">
+                            <p>엔진부스트 <small class="text-muted">(보통-높음)</small></p>
+                            <div class="slider" id="boost"></div><br><br>
+                            <p>혼합 연료 <small class="text-muted">(일반-고급)</small></p>
+                            <div class="slider" id="fuelmix"></div><br><br>
+                            <p>기어 변속 <small class="text-muted">(보통-빨리)</small></p>
+                            <div class="slider" id="gearchange"></div><br><br>
+                        </div>
+
+                        <div class="col col-lg-6">
+                            <p>제동 <small class="text-muted">(후면)</small></p>
+                            <div class="slider" id="braking"></div><br><br>
+                            <p>토크(마력) <small class="text-muted">(후면)</small></p>
+                            <div class="slider" id="drivebiass"></div><br><br>
+                            <p>제동력 <small class="text-muted">(약한 강한)</small></p>
+                            <div class="slider" id="brakeforce"></div><br><br>
+                        </div>
+                    </div>
+                    <div class="spacer" style="line-height:2rem;"><br></div>
+                    <div class="row">
+                        <div class="col"><button class="btn btn-success form-control" id="defaultbtn">공장 표준</button></div>
+                        <div class="col"><button class="btn btn-danger form-control" id="sportbtn">스포츠 모드</button></div>
+                    </div>
+                    <div class="spacer" style="line-height:2rem;"><br></div>
+                    <div class="row">
+                        <div class="col"><button class="btn btn-primary form-control" id="savebtn">저장</button></div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sistema-op">인천광역시 튜닝시스템</div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

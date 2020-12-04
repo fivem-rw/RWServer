@@ -1,0 +1,48 @@
+<!---------------------------------------------------------//
+//-------------- RealWorld MAC - VRP UserList -------------//
+//-------------- https://discord.gg/realw -----------------//
+//---------------------------------------------------------->
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="wrap">
+		<div class="header">
+			<div class="logo-text">리얼월드 접속유저</div>
+			<div class="logo"><img src="logo.png"></div>
+			<div id="tabType" class="jobs"></div>
+			<div class="controls"><a href="#" class="btn-close">닫기 X</a></div>
+		</div>
+		<div class="playerlist">
+			<table id="playerlistHeader" class="player-list">
+				<tr class="heading">
+					<th>번호</th>
+					<th>닉네임</th>
+					<th>직업</th>
+					<th>번호</th>
+					<th>닉네임</th>
+					<th>직업</th>
+					<th>번호</th>
+					<th>닉네임</th>
+					<th>직업</th>
+				</tr>
+			</table>
+			<div class="playerlistScroller">
+				<table id="playerlist" class="player-list"></table>
+			</div>
+		</div>
+		<div class="serverinfo">
+			👨‍⚕️&nbsp;접속자:&nbsp;<span id="player_count">0</span>/<span
+				id="max_players">0</span>&nbsp;&nbsp;&nbsp;🎥&nbsp;플레이시간:&nbsp;<span id="play_time">00시간 00분</span>
+		</div>
+	</div>
+
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>

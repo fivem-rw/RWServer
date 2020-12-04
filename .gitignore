@@ -1,0 +1,10 @@
+.vscode/*.json
+core/crashes/*
+cache/*
+logs/*
+web/screenr/data/*
+
+!core/crashes/.gitkeep
+!cache/.gitkeep
+!logs/.gitkeep
+!web/screenr/data/.gitkeep

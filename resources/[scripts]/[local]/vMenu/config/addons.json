@@ -1,0 +1,48 @@
+{
+  "vehicles": [
+    "avj",
+    "pistas"
+  ],
+  "peds": [
+    "AK_BatmanBeyond",
+    "batmanbeyond",
+    "batmanbeyondX",
+    "capmerica_modsoldier",
+    "charmander",
+    "ChuckyDiabolico",
+    "CorvusGlaive",
+    "CullObsidian",
+    "EbonyMaw",
+    "GreenLanternInjustice",
+    "kratos",
+    "KuugaAmazingMighty",
+    "overlord",
+    "Proxima",
+    "SavitarCW",
+    "ShazamInjustice",
+    "spidermanx",
+    "squirtle",
+    "STR_Lucario",
+    "Waluigi",
+    "Wario",
+    "Yellowjacket",
+    "zelda",
+    "link",
+    "fergie",
+    "Girl",
+    "lanaBikini3",
+    "doppleganger",
+    "laraclassic",
+    "laracombat",
+    "laragym",
+    "larajungle",
+    "lararobe",
+    "SailorMoon",
+    "TifaCA",
+    "TifaCB",
+    "WonderWomanMovie"
+  ],
+  "weapons": [
+    "BFG9000"
+  ]
+}

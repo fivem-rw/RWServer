@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean');
+html {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	display: none;
+}
+
+.wdcard {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+.wdcard-container {
+	max-width: 1344px;
+	background: #fff;
+	background-image: url(fogging.png), url(fogging5.png);
+	background-size: 100% 100%, auto;
+	padding: 0;
+	margin: 0;
+	width: 80vw;
+	height: 80vh;
+	display: none;
+	border-radius: 10px;
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+.wdcard-button {
+	display: none;
+	width: 100vw;
+	height: 100vh;
+}
+
+.wdcard-button .inner {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#cardbutton {
+	transition: all 0.5s;
+}
+
+a:link,
+/* unvisited link */
+
+a:visited {
+	/* visited link */
+	color: #FF3366;
+	text-decoration: none;
+}
+
+a:hover,
+/* mouse over link */
+
+a:active {
+	/* selected link */
+	color: #f30;
+	text-decoration: none;
+}
+
+h1 {
+	/* font name */
+	color: #FF3366;
+	font-size: 50px;
+	line-height: 100%;
+	font-weight: 100;
+	text-align: left;
+	text-shadow: #000 8px 8px 20px;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+}
+
+h2 {
+	/* font name */
+	color: #FF3366;
+	font-size: 450%;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 100%;
+	font-weight: 100;
+	text-align: left;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+	margin: 0;
+	padding: 0;
+}
+
+#greeting_text {
+	height: auto;
+	position: absolute;
+	left: 50%;
+	top: 21%;
+	transform: translate(-50%, 0);
+	text-align: center;
+	z-index: 2;
+}
+
+.owner1 {
+	/* font name */
+	color: #FF3366;
+	font-size: 80px;
+	line-height: 100%;
+	font-weight: 100;
+	text-align: right;
+	text-shadow: #000 8px 8px 20px;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+	height: auto;
+	position: absolute;
+	right: 62%;
+	top: 35%;
+}
+
+.owner2 {
+	/* font name */
+	color: #FF3366;
+	font-size: 80px;
+	line-height: 100%;
+	font-weight: 100;
+	text-align: left;
+	text-shadow: #000 8px 8px 20px;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+	height: auto;
+	position: absolute;
+	left: 60%;
+	top: 35%;
+}
+
+.tooltip {
+	color: #f5a328;
+	font-size: 18px;
+	font-weight: 700;
+	position: absolute;
+	left: 50%;
+	top: 12%;
+	transform: translate(-50%, 0);
+}
+
+.desc {
+	color: rgb(208, 105, 32);
+	font-size: 30px;
+	font-style: italic;
+	line-height: 50px;
+	font-weight: 100;
+	text-align: center;
+	text-shadow: #000 8px 8px 20px;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+	height: auto;
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	transform: translate(-50%, 0);
+	background: rgba(241, 178, 0, 0.2);
+	padding: 10px 20px;
+}
+
+.desc2 {
+	color: rgb(208, 105, 32);
+	font-size: 20px;
+	font-style: italic;
+	line-height: 50px;
+	font-weight: 100;
+	text-align: center;
+	text-shadow: #000 8px 8px 20px;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+	height: auto;
+	position: absolute;
+	left: 50%;
+	top: 75%;
+	transform: translate(-50%, 0);
+}
+
+#heart {
+	position: absolute;
+	left: 50%;
+	top: -10%;
+	transform: translate(-50%, 0);
+	z-index: 1;
+}
+
+#canvas {
+	margin-left: 230px;
+}
+
+#social_icons {
+	display: block;
+	position: absolute;
+	top: 100%;
+	margin-top: -50px;
+	bottom: 10px;
+	z-index: 3;
+}
+
+#icon {
+	margin: 4px;
+	background-position: top;
+	float: left;
+	overflow: hidden;
+}
+
+#bt_sound {
+	display: block;
+	position: absolute;
+	left: 100%;
+	margin-left: -40px;
+	z-index: 3;
+}

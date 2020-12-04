@@ -1,0 +1,58 @@
+/*--------------------------------------------------------------------------
+
+    ActionMenu - v1.0.1
+    Created by WolfKnight
+    Additional help from lowheartrate, TheStonedTurtle, and Briglair.  
+
+--------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: "Roboto";
+    src: url( "Roboto.ttf" );
+}
+
+
+
+#action_huwon_menu {
+    position: absolute;
+    overflow: hidden; 
+    left: 2%; 
+    top: 30%;
+    width: 250px;
+    height: 60%; 
+	border-top: 5px solid red ;	
+	
+}
+
+#action_huwon_menu div {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#action_huwon_menu button, button:hover, button:active, button:focus {
+    
+    border: none
+}
+
+#action_huwon_menu button { 
+    background: linear-gradient( to right, rgba( 25, 25, 25, 255 ), rgba( 75, 75, 75, 0 ) );
+	/*background: linear-gradient( to right, rgba( 0, 0, 0, 255), rgba ( 0, 0, 0, 0 ) ); */
+    color: white; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    padding: 15px 24px; 
+    cursor: pointer; 
+    width: 250px; 
+	border-bottom: 5px solid red ;
+    display: block; 
+    text-transform: uppercase;
+}
+
+#action_huwon_menu button:hover {
+    background: rgba( 125, 125, 125, 255 )
+}
+
+#action_huwon_menu button:active {
+    background: red
+}

@@ -1,0 +1,211 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 5%;
+    -webkit-animation: fadein 1s;
+    /* Safari and Chrome */
+}
+
+.sections {
+    position: relative;
+    text-align: center;
+}
+
+.sections button {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.35);
+    border: 0px;
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+.sections button:hover {
+    border: 1px solid rgb(174 0 0);
+}
+
+.sections .fas {
+    color: white;
+    font-size: 35px;
+}
+
+.sections img {
+    width: 32px;
+    height: 32px;
+}
+
+.shop {
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-left: 1.5px solid rgba(29, 29, 29, 0.7);
+    border-bottom: 1.5px solid rgba(29, 29, 29, 0.7);
+    border-right: 1.5px solid rgba(29, 29, 29, 0.7);
+    width: 420px;
+    height: 510px;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.shopheader {
+    margin: 0 auto;
+    background-image: repeating-linear-gradient(to right, rgb(0 0 0), rgb(255 0 0));
+    background-size: 200% 200%;
+    background-position: 100% 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 422.5px;
+    height: auto;
+    padding-bottom: 1%;
+    animation: fade 10s ease infinite;
+}
+
+.shopheader {
+    -webkit-animation: Fade 10s ease infinite;
+    -moz-animation: Fade 10s ease infinite;
+    animation: Fade 10s ease infinite;
+}
+
+.items {
+    padding-top: 1%;
+    padding-right: 1%;
+    height: 465px;
+    overflow-y: scroll;
+}
+
+.shopheader p {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.buttons-nav {
+    margin-top: 4%;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons-nav span {
+    background: #a20000;
+    padding: 2.5px 5px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 3px;
+}
+
+@-webkit-keyframes Fade {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Fade {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Fade {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+div.parent{
+    display: inline-block;
+    border:solid black 1px;
+    padding:5px;
+    width:45%;
+    margin-left: 5px; /* you can change/remove margin */
+    margin-bottom: 5px;
+
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+div.parent:hover {
+    background-image: repeating-linear-gradient(to right, rgb(0 0 0), rgb(255 0 0));
+    background-size: 200% 200%;
+    background-position: 100% 100%;
+}
+
+div.text {
+    vertical-align: middle;
+    display: table-cell;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+div.price {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.8rem;
+}
+div.parent .img{
+    vertical-align:middle;
+    display:table-cell;
+    padding-right:5px;
+    width:50px; /* you can change width */
+}
+div.img img{
+    width:100%;
+    height:50px; /* you can change height */
+    vertical-align:middle;
+}

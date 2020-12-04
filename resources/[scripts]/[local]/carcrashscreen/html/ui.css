@@ -1,0 +1,414 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(MagmaWave.otf);
+}
+
+.container {
+  display: none;
+}
+
+#bloodscreen {
+  position: absolute;
+  height: 105%;
+  width: 120%;
+  bottom: -2%;
+  right: -13%;
+  opacity: 0.5;
+  animation: fadeinout 3s infinite;
+}
+
+#triedx {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0%;
+  right: 0%;
+  opacity: 1.0;
+  animation: fadeinout2 1.3s infinite;
+  z-index: 4;
+}
+
+#crack1 {
+  position: absolute;
+  height: 44%;
+  width: 36%;
+  bottom: -10%;
+  right: 80%;
+  transform: rotate(180deg);
+}
+
+#crack2 {
+  position: absolute;
+  height: 44%;
+  width: 36%;
+  bottom: 60%;
+  right: -20%;
+  transform: skewY(4deg);
+}
+
+#crack3 {
+  position: absolute;
+  height: 44%;
+  width: 36%;
+  bottom: 83%;
+  right: 60%;
+  transform: skewY(6deg);
+}
+
+#crack4 {
+  position: absolute;
+  height: 44%;
+  width: 36%;
+  bottom: -10%;
+  right: -10%;
+  transform: rotate(4deg);
+}
+
+#crack5 {
+  position: absolute;
+  height: 44%;
+  width: 36%;
+  bottom: 60%;
+  right: 60%;
+  transform: rotate(4deg);
+}
+
+#crack6 {
+  position: absolute;
+  height: 44%;
+  width: 36%;
+  bottom: 50%;
+  right: -10%;
+  transform: rotate(4deg);
+}
+
+#crack7 {
+  position: absolute;
+  height: 44%;
+  width: 36%;
+  bottom: 5%;
+  right: 70%;
+  transform: rotate(4deg);
+}
+
+#crack8 {
+  position: absolute;
+  height: 44%;
+  width: 36%;
+  bottom: 5%;
+  right: 10%;
+  transform: rotate(4deg);
+}
+
+#crack9 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0%;
+  right: 0%;
+}
+
+.healthnumber {
+  left: 8.1%;
+  font-size: 60px;
+  bottom: 1.75%;
+  color: #FFF;
+}
+
+#energyfull {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  top: 82%;
+  left: 97.3%;
+  z-index: 3;
+  transform: skewY(4deg);
+}
+
+#energyout {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  top: 82%;
+  left: 97.3%;
+  z-index: 2;
+  transform: skewY(4deg);
+}
+
+@-webkit-keyframes fadeinout {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@-webkit-keyframes fadeinout2 {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes fadeinout2 {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+#box1 {
+  left: 89.2%;
+  bottom: 18.5%;
+  position: absolute;
+  width: 0.15%;
+  height: 1.0%;
+  padding: 0;
+  float: right;
+  background: #000000;
+  z-index: 2;
+  transform: skewY(4deg);
+  opacity: 0.65;
+}
+
+#box2 {
+  left: 91.5%;
+  bottom: 18.2%;
+  position: absolute;
+  width: 0.15%;
+  height: 1.0%;
+  padding: 0;
+  float: right;
+  background: #000000;
+  z-index: 2;
+  transform: skewY(4deg);
+  opacity: 0.65;
+}
+
+#box3 {
+  left: 93.9%;
+  bottom: 18%;
+  position: absolute;
+  width: 0.15%;
+  height: 1.0%;
+  padding: 0;
+  float: right;
+  background: #000000;
+  z-index: 2;
+  transform: skewY(4deg);
+  opacity: 0.65;
+}
+
+#box4 {
+  left: 89.2%;
+  bottom: 14.5%;
+  position: absolute;
+  width: 0.15%;
+  height: 1.0%;
+  padding: 0;
+  float: right;
+  background: #000000;
+  z-index: 2;
+  transform: skewY(4deg);
+  opacity: 0.65;
+}
+
+#box5 {
+  left: 91.5%;
+  bottom: 14.2%;
+  position: absolute;
+  width: 0.15%;
+  height: 1.0%;
+  padding: 0;
+  float: right;
+  background: #000000;
+  z-index: 2;
+  transform: skewY(4deg);
+  opacity: 0.65;
+}
+
+#box6 {
+  left: 93.9%;
+  bottom: 14%;
+  position: absolute;
+  width: 0.15%;
+  height: 1.0%;
+  padding: 0;
+  float: right;
+  background: #000000;
+  z-index: 2;
+  transform: skewY(4deg);
+  opacity: 0.65;
+}
+
+#hungerlabel {
+  position: absolute;
+  color: #FFF;
+  font-family: myFirstFont;
+  font-size: 10px;
+  margin-left: 84%;
+  margin-top: -15.5%;
+  text-shadow: 2px 2px #000000;
+  opacity: 1;
+}
+
+#thirstlabel {
+  position: absolute;
+  color: #FFF;
+  font-family: myFirstFont;
+  font-size: 10px;
+  margin-left: 80%;
+  margin-top: -15.5%;
+  text-shadow: 2px 2px #000000;
+  opacity: 1;
+}
+
+#hunger {
+  position: absolute;
+  left: 87%;
+  bottom: 18%;
+  width: 9%;
+  height: 0.90%;
+  padding: 0;
+  border: 3.5px solid #000000;
+  float: right;
+  background: #181818;
+  transform: skewY(4deg);
+  opacity: 0.7;
+}
+
+#thirst {
+  position: absolute;
+  left: 87%;
+  bottom: 14%;
+  width: 9%;
+  height: 0.90%;
+  padding: 0;
+  border: 3.5px solid #000000;
+  float: right;
+  background: #181818;
+  transform: skewY(4deg);
+  opacity: 0.7;
+}
+
+#flat {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  bottom: -2%;
+  right: -13%;
+}
+
+#blood20 {
+  left: 92.9%;
+  bottom: 20.1%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  float: right;
+  z-index: 2;
+  transform: skewY(4deg);
+  opacity: 0.65;
+}
+
+#blood45 {
+  left: 92.9%;
+  bottom: 20.1%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  float: right;
+  z-index: 2;
+  transform: skewY(4deg);
+  opacity: 0.65;
+}
+
+#vest100 {
+  left: 91.1%;
+  bottom: 20.3%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  float: right;
+  z-index: 2;
+  transform: skewY(4deg);
+  opacity: 0.65;
+}
+
+#vest45 {
+  left: 91.1%;
+  bottom: 20.3%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  float: right;
+  z-index: 2;
+  transform: skewY(4deg);
+  opacity: 0.65;
+}
+
+#vest20 {
+  left: 91.1%;
+  bottom: 20.3%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  float: right;
+  z-index: 2;
+  transform: skewY(4deg);
+  opacity: 0.65;
+}
+
+#boxHunger, #boxThirst {
+  background: #73be73;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+#boxHunger {
+  background: #FFF;
+  opacity: 0.7;
+}
+
+#boxThirst {
+  background: #FFF;
+  opacity: 0.7;
+}
+
+body {
+  overflow: hidden;
+  height: 1080px;
+  width: 100%;
+}

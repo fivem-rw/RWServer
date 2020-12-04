@@ -1,0 +1,639 @@
+@font-face {
+  font-family: '123';
+  src: url('https://cdn.discordapp.com/attachments/663222690198454282/669911627377934346/font2.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'real_nobless';
+  src: url('https://cdn.discordapp.com/attachments/688601836302630961/690157726126702639/HARLOWSI.TTF');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'real_red';
+  src: url('https://cdn.discordapp.com/attachments/688601836302630961/690156239422095368/ENGARMB.TTF');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'god';
+  src: url('https://cdn.discordapp.com/attachments/725899838683742239/732484139143659520/Maplestory_Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'real_crown';
+  src: url('https://cdn.discordapp.com/attachments/725899838683742239/733470751612731392/CheetahKickPersonalUse-qnKr.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'real_prestige';
+  src: url('https://cdn.discordapp.com/attachments/688601836302630961/690159377725784074/MESQUITESTD.OTF');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'real_royal';
+  src: url('https://cdn.discordapp.com/attachments/688601836302630961/690156985932709941/COPRGTB.TTF');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'real_ace';
+  src: url('https://cdn.discordapp.com/attachments/688601836302630961/690156603776958602/BRUSHSCRIPTSTD.OTF');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'real_first';
+  src: url('https://cdn.discordapp.com/attachments/725899838683742239/732511056374530108/Nickainley-Normal.otf');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'real_firstP';
+  src: url('https://cdn.discordapp.com/attachments/725899838683742239/732464765267607582/GreatVibes-Regular.otf');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'real_highend';
+  src: url('https://cdn.discordapp.com/attachments/688601836302630961/694176472893489192/FIGHTT3_.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'real_trinity';
+  src: url('https://cdn.discordapp.com/attachments/725899838683742239/732508979275759666/Thirthy_Demo.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BMJUA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@keyframes light {
+  to {
+    transform: translate(50%, 50%);
+  }
+}
+
+@keyframes light {
+  to {
+    transform: translate(50%, 50%);
+  }
+}
+
+@keyframes first {
+  from {
+    text-shadow: 0px 0px 10px rgb(109, 209, 255), 0px 0px 10px rgb(109, 209, 255), 0px 0px 25px rgb(109, 209, 255), 0px 0px 25px rgb(109, 209, 255), 0px 0px 25px rgb(109, 209, 255), 0px 0px 25px rgb(109, 209, 255), 0px 0px 25px rgb(109, 209, 255), 0px 0px 25px rgb(109, 209, 255), 0px 0px 50px rgb(109, 209, 255), 0px 0px 50px rgb(109, 209, 255), 0px 0px 50px rgb(23, 128, 255), 0px 0px 150px rgb(23, 128, 255), 0px 10px 100px rgb(23, 128, 255), 0px 10px 100px rgb(23, 128, 255), 0px 10px 100px rgb(23, 128, 255), 0px 10px 100px rgb(23, 128, 255), 0px -10px 100px rgb(23, 128, 255), 0px -10px 100px rgb(23, 128, 255);
+  }
+}
+
+@keyframes rainbow3 {
+  0% {
+    background-position: 0% 82%
+  }
+  50% {
+    background-position: 100% 19%
+  }
+  100% {
+    background-position: 0% 82%
+  }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes ddd {
+  0% {
+    background-position: 0% 60%
+  }
+  100% {
+    background-position: 50% 560%
+  }
+  200% {
+    background-position: 0% 0%
+  }
+}
+
+@keyframes red_effect {
+  0% {
+    background-position: 0% 0%
+  }
+  100% {
+    background-position: 50% 560%
+  }
+  200% {
+    background-position: 0% 0%
+  }
+}
+
+@keyframes ace_effect {
+  0% {
+    background-position: 0% 0%
+  }
+  100% {
+    background-position: 50% 560%
+  }
+  200% {
+    background-position: 0% 1000%
+  }
+}
+
+@keyframes anous_effect {
+  0% {
+    background-position: 50% 0%
+  }
+  100% {
+    background-position: 0% 560%
+  }
+  200% {
+    background-position: 50% 1000%
+  }
+}
+
+@keyframes prestige_effect {
+  0% {
+    background-position: 50% 510%
+  }
+  100% {
+    background-position: 0% 560%
+  }
+  200% {
+    background-position: 50% 1000%
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Asset&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Gothic:400,700,800|Nanum+Myeongjo:400,700,800|Noto+Sans+KR:400,500,700,900&display=swap&subset=korean');
+.color-0 {
+  color: #ffffff;
+}
+
+.color-1 {
+  color: #ff4444;
+}
+
+.color-2 {
+  color: #99cc00;
+}
+
+.color-3 {
+  color: #ffbb33;
+}
+
+.color-4 {
+  color: #0099cc;
+}
+
+.color-5 {
+  color: #33b5e5;
+}
+
+.color-6 {
+  color: #aa66cc;
+}
+
+.color-8 {
+  color: #cc0000;
+}
+
+.color-9 {
+  color: #cc0068;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.no-grow {
+  flex-grow: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+#app {
+  font-family: 'Do Hyeon', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  letter-spacing: -0.02em;
+}
+
+.chat-window {
+  position: absolute;
+  top: 1.5%;
+  left: 1%;
+  width: 38%;
+  height: 22%;
+  max-width: 1000px;
+  background: transparent;
+  animation-duration: 2s;
+}
+
+.chat-messages {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  font-size: 1.5vh;
+  line-height: 2.2vh;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.chat-messages .basic {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.chat-messages .advanced {
+  text-shadow: 0px 0px 10px rgba(27, 255, 0, 0.5);
+}
+
+.chat-messages .rare {
+  text-shadow: 0px 0px 10px rgba(255, 251, 0, 0.5);
+}
+
+.chat-messages .unique {
+  text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+}
+
+.chat-messages .zombie {
+  text-shadow: 0px 0px 5px rgb(204, 29, 204);
+}
+
+.chat-messages .gold {
+  text-shadow: 0px 0px 5px rgb(251, 255, 0);
+}
+
+.chat-messages .god {
+  text-shadow: 0px 0px 5px rgb(202, 14, 14);
+  font-family: "god";
+  background-image: url("https://cdn.discordapp.com/attachments/681858305068498953/688738429940269082/70849276--------------.jpg");
+  background-size: 800% 800%;
+  font-size: 1.3em;
+  letter-spacing: 0.01em;
+  -webkit-background-clip: text;
+  animation: red_effect 15s linear infinite;
+}
+
+.chat-messages .title-span.supporter1 {
+  background-image: url("https://cdn.discordapp.com/attachments/681858305068498953/688738429940269082/70849276--------------.jpg");
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  animation: red_effect 15s linear infinite;
+  text-shadow: 0 0 5px rgb(255, 117, 117);
+  font-family: "real_red";
+  color: transparent;
+  font-size: 1.3em;
+  letter-spacing: 0.01em;
+}
+
+.chat-messages .title-span.supporter2 {
+  background-image: url("https://cdn.discordapp.com/attachments/688601836302630961/688955011681615894/83.jpg");
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  font-family: "real_ace";
+  animation: ace_effect 15s linear infinite;
+  text-shadow: 0 0 10px rgb(158, 168, 255);
+  color: transparent;
+  font-size: 1.5em;
+  letter-spacing: 0.01em;
+  position: relative;
+  top: 2px;
+}
+
+.chat-messages .title-span.supporter3 {
+  background-image: url("https://i.ibb.co/VBMypR6/2551119.jpg");
+  text-shadow: 0 0 30px rgb(245, 177, 52);
+  background-size: 1000% 1000%;
+  -webkit-background-clip: text;
+  animation: ace_effect 30s linear infinite;
+  font-family: "real_royal";
+  color: transparent;
+  font-size: 1.3em;
+  letter-spacing: 0.01em;
+  position: relative;
+  top: 1px;
+}
+
+.chat-messages .title-span.supporter4 {
+  background-image: url("https://cdn.discordapp.com/attachments/688601836302630961/692027681931264010/988.jpg");
+  -webkit-background-clip: text;
+  background-size: 500% 800%;
+  text-shadow: 0 0 30px rgb(25, 0, 255);
+  color: transparent;
+  font-family: "real_nobless";
+  animation: anous_effect 1s linear infinite;
+  font-size: 1.3em;
+  letter-spacing: 0.01em;
+}
+
+.chat-messages .title-span.supporter5 {
+  font-size: 1.3em;
+  background-image: url("https://cdn.discordapp.com/attachments/725899838683742239/732509392309846038/first.jpg");
+  -webkit-background-clip: text;
+  background-size: 500% 500%;
+  text-shadow: 0 0 30px rgb(89, 222, 255);
+  color: transparent;
+  font-family: "real_first";
+  animation: textclip 3s linear infinite;
+}
+
+.chat-messages .title-span.supporter6 {
+  font-size: 1.5em;
+  background-image: url("https://cdn.discordapp.com/attachments/725899838683742239/732462098172346408/fristprime.png");
+  -webkit-background-clip: text;
+  background-size: 500% 500%;
+  text-shadow: 0 0 30px rgb(0, 225, 255);
+  color: transparent;
+  font-family: "real_firstP";
+  animation: textclip 3s linear infinite;
+}
+
+.chat-messages .title-span.supporter7 {
+  font-size: 1.4em;
+  background-image: url("https://cdn.discordapp.com/attachments/725899838683742239/732454224377675826/trinitybackground.png");
+  -webkit-background-clip: text;
+  background-size: 800% 1000%;
+  text-shadow: 0 0 30px rgb(248, 27, 211);
+  color: transparent;
+  font-family: "real_trinity";
+  animation: textclip 3s linear infinite;
+}
+
+.chat-messages .title-span.supporter8 {
+  background-image: url("https://cdn.discordapp.com/attachments/725899838683742239/733469175078715423/krared.png");
+  -webkit-background-clip: text;
+  animation: ddd 8s linear infinite;
+  background-size: 1000% 1000%;
+  text-shadow: 0 0 30px rgb(233, 63, 63);
+  font-family: "real_crown";
+  color: transparent;
+  font-size: 1.9em;
+  letter-spacing: 0.01em;
+  position: relative;
+  top: 1px;
+}
+
+.chat-messages .title-span.supporter9 {
+  background-image: url("https://cdn.discordapp.com/attachments/688601836302630961/692360227936403516/1136.jpg");
+  -webkit-background-clip: text;
+  background-size: 1000% 1000%;
+  text-shadow: 0 0 30px rgb(199, 199, 199);
+  color: transparent;
+  font-family: 'real_prestige';
+  font-weight: 900;
+  animation: prestige_effect 3s linear infinite;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  position: relative;
+  top: 3px;
+}
+
+.chat-messages .title-span.supporter10 {
+  font-size: 1.3em;
+  background-image: url("https://cdn.discordapp.com/attachments/688601836302630961/692359868387950592/8.jpg");
+  -webkit-background-clip: text;
+  background-size: 1000% 1000%;
+  text-shadow: 0 0 30px rgb(255, 201, 201);
+  color: transparent;
+  font-family: "real_highend";
+  animation: prestige_effect 3s linear infinite;
+  position: relative;
+  top: 2px;
+}
+
+.chat-messages .msg {
+  margin: 0.25vh 0;
+  padding: 0;
+}
+
+.chat-messages .no-template, .chat-messages .default-template {
+  padding: 2px 10px 2px 35px;
+  background: rgba(0, 0, 0, 0.35);
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#848484+0,000000+100&0.65+0,0+100 */
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6848484', endColorstr='#00000000', GradientType=1);
+  /* IE6-9 */
+  position: relative;
+  overflow: hidden;
+}
+
+.chat-messages .no-template:before, .chat-messages .default-template:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 1px;
+  height: 80%;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  border-left: 1px solid rgb(180, 180, 180);
+}
+
+.chat-messages .box-light .no-template:before, .chat-messages .box-light .default-template:before {
+  border-left: 1px solid rgb(255, 251, 0);
+}
+
+.chat-messages .box-light2 .no-template:before, .chat-messages .box-light2 .default-template:before {
+  border-left: 1px solid rgb(9, 255, 0);
+}
+
+.chat-messages .box-light3 .no-template:before, .chat-messages .box-light3 .default-template:before {
+  border-left: 1px solid rgb(214, 12, 12);
+}
+
+.chat-messages .default-template {
+  padding-left: 15px;
+}
+
+.chat-input {
+  font-size: 1.65vh;
+  position: absolute;
+  top: 29.8%;
+  left: 1%;
+  width: 38%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.prefix {
+  font-size: 1.8vh;
+  position: absolute;
+  margin-top: 0.5%;
+  left: 1.5%;
+}
+
+textarea {
+  font-size: 1.65vh;
+  display: block;
+  box-sizing: border-box;
+  padding: 1%;
+  padding-left: 5%;
+  color: white;
+  background: rgba(0, 0, 0, .2);
+  width: 100%;
+  border-width: 0;
+  height: 3.15%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 15px;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+.msg {
+  margin-bottom: 0.28%;
+}
+
+.multiline {
+  margin-left: 4%;
+  text-indent: -1.2rem;
+  white-space: pre-line;
+}
+
+.suggestions {
+  list-style-type: none;
+  padding: 0.5%;
+  padding-left: 1.4%;
+  font-size: 1.65vh;
+  box-sizing: border-box;
+  color: white;
+  background: rgba(0, 0, 0, .2);
+  width: 100%;
+}
+
+.help {
+  color: #b0bbbd;
+}
+
+.disabled {
+  color: #b0bbbd;
+}
+
+.suggestion {
+  margin-bottom: 0.5%;
+}
+
+.hidden {
+  display: none;
+}
+
+:root {
+  --notice-bg-red: rgba(241, 14, 14, 0.6);
+  --notice-bg-green: rgba(45, 207, 12, 0.6);
+  --notice-bg-blue: rgba(18, 14, 241, 0.6);
+  --notice-bg-yellow: rgba(206, 209, 14, 0.6);
+}
+
+.notice-box {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 15px 5px 15px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: var(--notice-bg-red);
+  font-size: 16px;
+  line-height: 24px;
+  transition: 0.2s all;
+}
+
+.notice-box.blue {
+  background-color: var(--notice-bg-blue);
+}
+
+.notice-box.yellow {
+  background-color: var(--notice-bg-yellow);
+}
+
+.notice-box.green {
+  background-color: var(--notice-bg-green);
+}
+
+.notice-box.starlight {
+  animation: starlight 3s infinite;
+}
+
+.notice-box>span {
+  font-weight: bold;
+}
+
+.notice-box .title {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: block;
+  padding: 0 5px 8px 5px;
+  margin: 0 -5px 5px -5px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@keyframes starlight {
+  0% {
+    background-color: var(--notice-bg-green)
+  }
+  10% {
+    background-color: var(--notice-bg-blue)
+  }
+  20% {
+    background-color: var(--notice-bg-red)
+  }
+  30% {
+    background-color: var(--notice-bg-yellow)
+  }
+  40% {
+    background-color: var(--notice-bg-green)
+  }
+  50% {
+    background-color: var(--notice-bg-blue)
+  }
+  60% {
+    background-color: var(--notice-bg-red)
+  }
+  70% {
+    background-color: var(--notice-bg-yellow)
+  }
+  80% {
+    background-color: var(--notice-bg-green)
+  }
+  90% {
+    background-color: var(--notice-bg-blue)
+  }
+  100% {
+    background-color: var(--notice-bg-green)
+  }
+}

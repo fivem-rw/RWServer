@@ -1,0 +1,295 @@
+/*---------------------------------------------------------//
+//-------------- RealWorld MAC - VRP UserList -------------//
+//-------------- https://discord.gg/realw -----------------//
+//---------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean');
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #aaa;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+@keyframes logo_rot {
+	0% {
+		transform: rotate(0deg)
+	}
+	50% {
+		transform: rotate(10deg)
+	}
+	100% {
+		transform: rotate(0deg)
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: bold;
+}
+
+a {
+	color: #ddd;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+#wrap {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: bold;
+	width: 85vw;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(50, 50, 50, 0.8);
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5), 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
+	color: rgba(255, 255, 255, 0.9);
+	border-radius: 5px;
+	display: none;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: bold;
+	width: 100%;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e09200+0,d24600+100 */
+	background: #e09200;
+	/* Old browsers */
+	background: -moz-linear-gradient(left, #e09200 0%, #d24600 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #e09200 0%, #d24600 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #e09200 0%, #d24600 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e09200', endColorstr='#d24600', GradientType=1);
+	/* IE6-9 */
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+	display: flex;
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3), 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
+	padding: 0 20px 0 50px;
+	margin: 0;
+	justify-content: space-between;
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	top: -28px;
+	left: -40px;
+}
+
+.logo img {
+	width: 90px;
+	opacity: 1;
+	transition: 0.2s all;
+}
+
+.logo-text {
+	display: inline-block;
+	position: absolute;
+	top: -20px;
+	left: 5px;
+	font-size: 12px;
+	line-height: 14px;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 3px;
+	padding: 2px 10px 2px 25px;
+}
+
+.logo img:hover {
+	animation: logo_rot 1s linear infinite;
+}
+
+.jobs {
+	display: flex;
+	flex-direction: row;
+}
+
+.jobs p {
+	font-size: 13px;
+	line-height: 18px;
+	margin: 0;
+	padding: 10px 10px;
+	border-bottom: 2px solid transparent;
+	color: #fff;
+	transition: 0.3s all;
+	position: relative;
+}
+
+.jobs p::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.2);
+	background: -webkit-linear-gradient(top, #e09200 0%, rgba(255, 255, 255, 0.2) 100%);
+}
+
+.jobs p:hover, .jobs p.active {
+	border-bottom: 2px solid rgba(239, 243, 2, 0.5);
+}
+
+.jobs p.active {
+	background-color: rgba(254, 180, 15, 0.5);
+}
+
+.controls {
+	width: 70px;
+	text-align: right;
+}
+
+.controls a {
+	font-size: 13px;
+	line-height: 18px;
+	display: inline-block;
+	margin: 0;
+	padding: 10px 10px;
+	color: #fff;
+	transition: 0.3s all;
+}
+
+.controls a:hover {
+	color: #efff00
+}
+
+#playerlistHeader {
+	padding-right: 10px;
+}
+
+.playerlist {
+	width: 100%;
+	height: 68vh;
+}
+
+.playerlistScroller {
+	width: 100%;
+	height: 65vh;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+table {
+	width: 100%;
+	text-align: left;
+	color: #eee;
+}
+
+th, td {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: bold;
+	padding-left: 0;
+	text-align: left;
+	padding-left: 15px;
+}
+
+th {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: bold;
+	padding-top: 10px;
+	height: 40px;
+}
+
+tr {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: bold;
+	font-size: 0.7vw;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+td {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 16px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	padding-top: 3px;
+	padding-bottom: 5px;
+	transition: 0.2s all;
+}
+
+tr.heading {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: bold;
+	font-size: 0.7vw;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+tr.heading th {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.serverinfo {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: bold;
+	font-size: 0.8vw;
+	text-align: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	margin-top: 30px;
+	padding: 20px 0;
+}
+
+.player-list tr th:nth-child(1), .player-list tr th:nth-child(4), .player-list tr th:nth-child(7), .player-list tr td:nth-child(1), .player-list tr td:nth-child(4), .player-list tr td:nth-child(7) {
+	width: 6vw;
+	color: #eee;
+}
+
+.player-list tr td:nth-child(1), .player-list tr td:nth-child(4), .player-list tr td:nth-child(7) {
+	border-left: 1px solid rgb(100, 100, 100)
+}
+
+.player-list tr:hover td:nth-child(1), .player-list tr:hover td:nth-child(4), .player-list tr:hover td:nth-child(7) {
+	border-left: 1px solid rgb(0, 253, 21)
+}
+
+.player-list tr td.empty {
+	border-left: none !important;
+}
+
+.player-list tr td:nth-child(1)>span, .player-list tr td:nth-child(4)>span, .player-list tr td:nth-child(7)>span {
+	color: rgb(0, 253, 21);
+}
+
+.player-list tr th:nth-child(2), .player-list tr th:nth-child(5), .player-list tr th:nth-child(8), .player-list tr td:nth-child(2), .player-list tr td:nth-child(5), .player-list tr td:nth-child(8) {
+	width: 11vw;
+	color: #eee;
+}
+
+.player-list tr th:nth-child(3), .player-list tr th:nth-child(6), .player-list tr th:nth-child(9), .player-list tr td:nth-child(3), .player-list tr td:nth-child(6), .player-list tr td:nth-child(9) {
+	width: 13vw;
+	color: #eee;
+}
+
+.player-list tr:hover td {
+	background: rgba(0, 0, 0, 0.2);
+}

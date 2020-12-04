@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <style>
+        .jumbotron {
+            display: none;
+        }
+
+        .loading {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron vertical-center">
+        <div class="container">
+            <nav class="navbar">
+                <span class="navbar-brand"></span>
+                <div id="exit_gui">
+                    <i class="fa fa-times"></i>
+                </div>
+            </nav>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                        aria-controls="pills-home" aria-selected="true">리얼월드 소개</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-rules-tab" data-toggle="pill" href="#pills-rules" role="tab"
+                        aria-controls="pills-rules" aria-selected="true">리얼월드 공지</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-job-tab" data-toggle="pill" href="#pills-job" role="tab"
+                        aria-controls="pills-job" aria-selected="true">리얼월드 직업</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-work-tab" data-toggle="pill" href="#pills-work" role="tab"
+                        aria-controls="pills-work" aria-selected="true">할수 있는 것들</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-controls-tab" data-toggle="pill" href="#pills-controls" role="tab"
+                        aria-controls="pills-controls" aria-selected="false">단축키</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <!-- Home Tab -->
+                <div class="tab-pane home-tab fade show active" id="pills-home" role="tabpanel"
+                    aria-labelledby="pills-home-tab">
+                    <img src="../assets/img/logo.png">
+                    <h1></h1>
+                    <ul>
+                    </ul>
+                    <h2>게임 안에서 언제든지 <kbd></kbd> 키를 누르면 현재 창을 다시 열 수 있습니다.</h2>
+                    <div class="loading d-flex justify-content-center">
+                        <div class="lds-loader">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div id="musicControls">
+                            <div id="previous" onclick="previousVideo()"><i class="fas fa-backward"></i></div>
+                            <div id="play-pause" onclick="playPause()"><i class="fas fa-pause"></i></div>
+                            <div id="skip" onclick="skipVideo()"><i class="fas fa-forward"></i></div>
+                            <div id="mute" onclick="muteVideo()"><i class="fas fa-volume-up"></i></div>
+                            <input type="range" min="1" max="100" class="slider" id="volumeSlider">
+                        </div>
+                        <div id="ytPlayer"></div>
+                        <div class="discord">
+                            <img src="../assets/img/discord.png">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Home Tab -->
+                <!-- Rules Tab -->
+                <div class="tab-pane fade show" id="pills-rules" role="tabpanel" aria-labelledby="pills-rules-tab">
+                    <!-- Rules Inner Tabs -->
+                    <div class="nav flex-column nav-pills inner-tabs" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <a class="nav-link nav-link-inner active" id="v-pills-notice-tab" data-toggle="pill"
+                            href="#v-pills-notice" role="tab" aria-controls="v-pills-notice" aria-selected="true">리얼월드
+                            프레임워크</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-notice2-tab" data-toggle="pill"
+                            href="#v-pills-notice2" role="tab" aria-controls="v-pills-notice2" aria-selected="true">업데이트
+                            예정</a>
+                    </div>
+                    <div class="tab-content tab-content-inner" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-notice" role="tabpanel"
+                            aria-labelledby="v-pills-notice-tab"> FiveM은 클라이언트기반 게임 GTA5에 아주 약간의 서버역할을 더한 플랫폼입니다.<br>
+                            우리는 리얼월드의 핵심 데이터를 모두 서버기반으로 변경한 FiveM 리얼월드 프레임워크를 제작중입니다.<br>
+                            이 프로젝트가 완성되고 출시되면 다음과 같은 이점이 있습니다.<br>
+                            <br>
+                            1. 악의적인 머니생성(핵) 이 절대로 불가능해집니다.<br>
+                            - 게임머니지급 및 회수를 서버에서 완전히 컨트롤 하므로 클라이언트에서 데이터를 조작하여 요청을 보낼 수 없습니다.<br>
+                            - 게임머니를 현실세상에서 사용하도록 만듭니다. 게임머니의 조작이 불가능해졌기에 현실세상에서 사용할 수 있는 리얼월드샵(쇼핑몰)을 구축할 예정입니다.<br>
+                            2. 개인의 차량 세부데이터를 서버에 저장합니다. 차량출고상태, 차량파손상태, 차량튜닝상태 등의 세부데이터가 초기화되지 않고 유지됩니다.<br>
+                            3. 차량의 데이터를 서버에서 완전히 컨트롤 하므로 악의적인 사용자 또는 심지어 관리자도 차량을 마음대로 소환할 수 없도록 제한할 수 있습니다.<br>
+                            4. 차량을 도난 또는 잃어버렸을 경우 재접속해도 차량이 초기화 되지않습니다. 도난차량을 찾아서 끌고와야만 합니다. (매우현실적)<br>
+                            5. 차량파손상태와 튜닝상태가 그대로 저장되므로 완벽한 중고차거래 시장을 만들 수 있습니다.<br>
+                            6. 튜닝은 기존과같이 마음껏 할 수 없습니다. 돈을 지불하고 튜닝할 수 있으며 좋은차 그리고 높은등급의 튜닝 일 수 록 매우 튜닝요금은 비싸집니다.<br>
+                            7. 무기의 총알량 그리고 무기의 파츠튜닝상태 또한 서버 데이터베이스에 저장되어 무기거래도 매우 디테일하게 진행할 수 있습니다.<br>
+                            8. 음식이나 아이템 등도 서버에서 완전히 컨트롤 하여 악의적인(핵프로그램) 사용자가 생성할 수 없도록 제한합니다.<br>
+                            기타 업데이트 예정...<br>
+                            <br>
+                            본 서버를 즐기시기 위해서는 스태프를 통하여 교육을 받은 후 진행하시는 것을 권장합니다.<br>
+                            보상 : 초기지원상자 X 3개<br>
+                            <br>
+                            스태프를 통하여 서버 정착에 도움을 받으실 수 있습니다.<br>
+                            경찰의 말을 무시하고 게임 진행시 처벌을 받으실 수 있습니다.<br>
+                            서버 내의 규칙을 먼저 읽어보신 후 플레이를 해주시면 감사합니다.<br>
+                            <br>
+                            이는 리얼월드를 적응하시기 위해서 미리 알아두시는 것을 권장 합니다.<br>
+                            <br>
+                            클라이언트에서 일정시간 경과이전에 악의적으로 여러번 요청을 보내면 그대로 돈이 계속 지급됩니다.<br>
+                            FiveM의 머니생성핵 프로그램은 이와같은 방식으로 머니를 임의대로 생성합니다.<br>
+                            <br>
+                            하지만, 우리의 방식은 서버에서 유저아이디와 지급시간 지급머니를 완전히 통제하므로 핵프로그램은 무용지물이 됩니다.<br>
+                            <br>
+                            우리는 계속 업데이트 할 예정입니다. </div>
+                        <div class="tab-pane fade" id="v-pills-notice2" role="tabpanel"
+                            aria-labelledby="v-pills-notice2-tab">
+                            <ul class="content-ul">
+                                <li>모든 물가는 현실세계 물가와 같거나 흡사합니다.</li>
+                                <li>신규사용자에게만 지급되는 뉴비지원상자를 돌려서 운좋게 당첨되면 초기지원자금을 얻을 수 있습니다.</li>
+                                <li>스태프는 일명 도우미 입니다. 서버 내에 모르시는 것이 있으시다면 스태프님을 호출해주세요!</li>
+                                <li>경찰은 압수한 물품을 경찰청장에게 전달해야합니다. 이를 어길시 경찰은 처벌받을 수 있습니다.</li>
+                                <li>모든 차량은 차량의 상태 및 위치가 저장되어 서버가 다시시작되도 그대로 유지됩니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Rules Inner Tabs -->
+                </div>
+                <div class="tab-pane fade show" id="pills-job" role="tabpanel" aria-labelledby="pills-job-tab">
+                    <!-- Rules Inner Tabs -->
+                    <div class="nav flex-column nav-pills inner-tabs" id="v-pills-intro-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <a class="nav-link nav-link-inner active" id="v-pills-job-intro-tab" data-toggle="pill"
+                            href="#v-pills-job-intro" role="tab" aria-controls="v-pills-job-intro"
+                            aria-selected="true">직업 소개</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-general-job-rank0-tab" data-toggle="pill"
+                            href="#v-pills-job-rank0" role="tab" aria-controls="v-pills-job-rank0"
+                            aria-selected="false">창조자</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-job-rank1-tab" data-toggle="pill"
+                            href="#v-pills-job-rank1" role="tab" aria-controls="v-pills-job-rank1"
+                            aria-selected="false">스태프</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-job-rank2-tab" data-toggle="pill"
+                            href="#v-pills-job-rank2" role="tab" aria-controls="v-pills-job-rank2"
+                            aria-selected="false">고위직</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-job-rank3-tab" data-toggle="pill"
+                            href="#v-pills-job-rank3" role="tab" aria-controls="v-pills-job-rank3"
+                            aria-selected="false">특수직</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-job-rank4-tab" data-toggle="pill"
+                            href="#v-pills-job-rank4" role="tab" aria-controls="v-pills-job-rank4"
+                            aria-selected="false">일반직</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-job-rank5-tab" data-toggle="pill"
+                            href="#v-pills-job-rank5" role="tab" aria-controls="v-pills-job-rank5"
+                            aria-selected="false">무직</a>
+                    </div>
+                    <div class="tab-content tab-content-inner" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-job-intro" role="tabpanel"
+                            aria-labelledby="v-pills-job-intro-tab">
+                            <h3>* 직업 구분</h3>
+                            <ul class="content-ul">
+                                <li>창조자: 총관리자, 개발자</li>
+                                <li>스태프: 준관리직 / 도우미</li>
+                                <li>고위직: 일반유저최고등급/불로소득 (특수직에서 전직)</li>
+                                <li>특수직: 고액월급직 (일반직에서 전직)</li>
+                                <li>일반직: 선택가능한 직업</li>
+                                <li>무직: 직업 미선택자</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-job-rank0" role="tabpanel"
+                            aria-labelledby="v-pills-job-rank0-tab">
+                            <h3>* 창조자</h3>
+                            <ul class="content-ul">
+                                <li>총관리자: 맥(1)</li>
+                                <li>관리자: 연화(10), 화양(3), 리진(5), 악동(8), 블린(6)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-job-rank1" role="tabpanel"
+                            aria-labelledby="v-pills-job-rank1-tab">
+                            <h3>* 스태프</h3>
+                            <ul class="content-ul">
+                                <li>스태프장: 연화</li>
+                                <li>스태프부장: 비니</li>
+                                <li>스태프: 이회장, 너구리, 상어, 성남은후, G_G, 최츠나, 바스코</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-job-rank2" role="tabpanel"
+                            aria-labelledby="v-pills-job-rank2-tab">
+                            <h3>* 고위직/사업</h3>
+                            <ul class="content-ul">
+                            <li>치안총감: 엠버빌(31)</li>
+                            <li>소방총감: 주군(32)</li>
+                            <li>삼합회 두목: 루잇(33)</li>
+							<li>마피아 두목: 퍼즐(45)</li>
+							<li>에르지오 회장: 곰돌(40)</li>
+							<li>월드렉카 대표: 하늘(30)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-job-rank3" role="tabpanel"
+                            aria-labelledby="v-pills-job-rank3-tab">
+                            <h3>* 특수직 (공무원/조직/사업가)</h3>
+                            <ul class="content-ul">
+                                <li>경찰: 서버 내의 치안을 지켜주는 공무원</li>
+                                <li>EMS: 서버 내의 생명을 담당하는 공무원</li>
+                                <li>삼합회: 2범죄 조직 중 하나의 조직</li>
+								<li>마피아: 2범죄 조직 중 하나의 조직</li>
+                                <li>사업가: 에르지오, 월드렉카</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-job-rank4" role="tabpanel"
+                            aria-labelledby="v-pills-job-rank4">
+                            <h3>* 일반직</h3>
+                            <ul class="content-ul">
+                                <li>광부: 준비 중 입니다.</li>
+                                <li>어부: 준비 중 입니다.</li>
+                                <li>막노동: 준비 중 입니다.</li>
+                                <li>목수: 준비 중 입니다.</li>
+                                <li>배달부: 준비 중 입니다.</li>
+                                <li>의료용품수송기사: 준비 중 입니다.</li>
+                                <li>정비공: 준비 중 입니다.</li>
+                                <li>택배기사: 준비 중 입니다.</li>
+                                <li>택시: 준비 중 입니다.</li>
+                                <li>트럭기사: 준비 중 입니다.</li>
+                                <li>사냥꾼: 준비 중 입니다.</li>
+                                <li>목장직원: 준비 중 입니다.</li>
+                                <li>현금수송기사: 준비 중 입니다.</li>
+                                <li>환경미화원: 준비 중 입니다.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-job-rank5" role="tabpanel"
+                            aria-labelledby="v-pills-job-rank5">
+                            <h3>* 무직</h3>
+                            <ul class="content-ul">
+                                <li>백수</li>
+                                <li>거지</li>
+                                <li>폐인</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Rules Inner Tabs -->
+                </div>
+                <div class="tab-pane fade show" id="pills-work" role="tabpanel" aria-labelledby="pills-work-tab">
+                    <!-- Rules Inner Tabs -->
+                    <div class="nav flex-column nav-pills inner-tabs" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <a class="nav-link nav-link-inner active" id="v-pills-guidelines-tab" data-toggle="pill"
+                            href="#v-pills-guidelines" role="tab" aria-controls="v-pills-guidelines"
+                            aria-selected="true">렌트카 사업</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-general-conduct-tab" data-toggle="pill"
+                            href="#v-pills-general-conduct" role="tab" aria-controls="v-pills-general-conduct"
+                            aria-selected="false">마약 밀매</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-rprules-tab" data-toggle="pill"
+                            href="#v-pills-rprules" role="tab" aria-controls="v-pills-rprules"
+                            aria-selected="false">대출업</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-rdmvdm-tab" data-toggle="pill"
+                            href="#v-pills-rdmvdm" role="tab" aria-controls="v-pills-rdmvdm"
+                            aria-selected="false">총기매매업</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-meta-powergaming-tab" data-toggle="pill"
+                            href="#v-pills-meta-powergaming" role="tab" aria-controls="v-pills-meta-powergaming"
+                            aria-selected="false">중고차매매업</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-newlife-tab" data-toggle="pill"
+                            href="#v-pills-newlife" role="tab" aria-controls="v-pills-newlife"
+                            aria-selected="false">삥뜯기</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-exploits-tab" data-toggle="pill"
+                            href="#v-pills-exploits" role="tab" aria-controls="v-pills-exploits"
+                            aria-selected="false">카지노도박</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-exploits-tab" data-toggle="pill"
+                            href="#v-pills-exploits" role="tab" aria-controls="v-pills-exploits"
+                            aria-selected="false">주식매매</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-exploits-tab" data-toggle="pill"
+                            href="#v-pills-exploits" role="tab" aria-controls="v-pills-exploits"
+                            aria-selected="false">청부살인</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-exploits-tab" data-toggle="pill"
+                            href="#v-pills-exploits" role="tab" aria-controls="v-pills-exploits"
+                            aria-selected="false">차량튜너</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-exploits-tab" data-toggle="pill"
+                            href="#v-pills-exploits" role="tab" aria-controls="v-pills-exploits"
+                            aria-selected="false">운송업</a>
+                    </div>
+                    <div class="tab-content tab-content-inner" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-guidelines" role="tabpanel"
+                            aria-labelledby="v-pills-guidelines-tab">
+                            <!-- Guideline Rules -->
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-general-conduct" role="tabpanel"
+                            aria-labelledby="v-pills-general-conduct-tab">
+                            <!-- General Conduct Rules -->
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-rprules" role="tabpanel"
+                            aria-labelledby="v-pills-rprules-tab">
+                            <!-- Role Playing Rules -->
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-rdmvdm" role="tabpanel"
+                            aria-labelledby="v-pills-rdmvdm-tab">
+                            <!-- RDM/VDM Rules -->
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-meta-powergaming" role="tabpanel"
+                            aria-labelledby="v-pills-meta-powergaming-tab">
+                            <!-- Meta/Power Gaming Rules -->
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-newlife" role="tabpanel"
+                            aria-labelledby="v-pills-newlife">
+                            <!-- New Life Rules -->
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-exploits" role="tabpanel"
+                            aria-labelledby="v-pills-exploits">
+                            <!-- Abuse/Exploit Rules -->
+                        </div>
+                    </div>
+                    <!-- End Rules Inner Tabs -->
+                </div>
+                <!-- End Rules Tab -->
+                <!-- Controls Tab -->
+                <div class="tab-pane fade" id="pills-controls" role="tabpanel" aria-labelledby="pills-controls-tab">
+                    <!-- Controls Inner Tabs -->
+                    <div class="nav flex-column nav-pills inner-tabs" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <a class="nav-link nav-link-inner active" id="v-pills-general-tab" data-toggle="pill"
+                            href="#v-pills-general" role="tab" aria-controls="v-pills-general"
+                            aria-selected="true">일반</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-rp-tab" data-toggle="pill" href="#v-pills-rp"
+                            role="tab" aria-controls="v-pills-rp" aria-selected="false">롤플레이</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-vehicles-tab" data-toggle="pill"
+                            href="#v-pills-vehicles" role="tab" aria-controls="v-pills-vehicles"
+                            aria-selected="false">차량</a>
+                        <a class="nav-link nav-link-inner" id="v-pills-jobs-tab" data-toggle="pill" href="#v-pills-jobs"
+                            role="tab" aria-controls="v-pills-jobs" aria-selected="false">직업</a>
+                    </div>
+                    <div class="tab-content tab-content-inner" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-general" role="tabpanel"
+                            aria-labelledby="v-pills-general-tab">
+                            <!-- General Hotkeys -->
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-rp" role="tabpanel" aria-labelledby="v-pills-rp-tab">
+                            <!-- RP Hotkeys -->
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-vehicles" role="tabpanel"
+                            aria-labelledby="v-pills-vehicles-tab">
+                            <!-- Vehicle Hotkeys -->
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-jobs" role="tabpanel" aria-labelledby="v-pills-jobs-tab">
+                            <!-- Job Hotkeys -->
+                        </div>
+                    </div>
+                    <!-- End Controls Inner Tabs -->
+                </div>
+                <!-- End Controls Tab -->
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap Includes -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script><!-- Custom JS -->
+    <script src="../config.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/controls.js"></script>
+</body>
+
+</html>
