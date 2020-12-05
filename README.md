@@ -9,7 +9,7 @@ FiveM RealWorld Server
 
 2. configs/server-new.cfg 설정
 set mysql_connection_string "mysql://[사용자]:[비밀번호]@[DB주소]/[DB명]?multipleStatements=true&connectTimeout=30000"
-sv_licensekey [FiveM 라이센스 키]
+set sv_licensekey [FiveM 라이센스 키]
 
 3. starter/ServerStart-New.cmd 실행
 
@@ -44,7 +44,7 @@ C:\RWServer\resources\[scripts]\[local]\[vrp]
 
 + 정적 파일:
 C:\RWServer\resources\[static]
-정적 파일은 맵,스킨,차량,무기 등의 리소스가 위치합니다. (별도로 제공되는 링크에서 파일을 설치)
+정적 파일은 맵,스킨,차량,무기 등의 리소스가 위치합니다.
 ```
 
 <h3>리얼월드 주요 스크립트 설명</h3>
