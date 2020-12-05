@@ -58,7 +58,7 @@ C:\RWServer\resources\[static]
 + evp
 기본 핵방지 시스템
 CreateObject, CreateObjectNoOffset, CreateForcedObject, CreateVehicle, CreatePed, AddExplosion API 함수 악의적인 실행 방지
-클라이언트단 암호화 적용
+클라이언트단 암호화 적용 예시
 
 + showimg
 사용자에게 이미지 출력
@@ -126,7 +126,7 @@ DUI 방송 모듈
 뮤직박스
 HTML UI 제공
 범위설정 및 소리 설정기능
-뮤직박스와의 거래에 따라 소리 크기 자동 조절
+뮤직박스와의 거리에 따라 소리 크기 자동 조절
 뮤직박스 범위를 벗어나면 자동 OFF
 뮤직박스 범위안에 들어오면 기존유저와 재생위치 동기화
 
@@ -146,7 +146,7 @@ HTML UI 제공
 라이브 카지노
 
 + [vrp]/vrp_voicechat
-채팅 리딩 시스템
+채팅 보이스리딩
 
 + [vrp]/vrp_zombie
 좀비존
