@@ -1,6 +1,20 @@
 # RWServer
 FiveM RealWorld Server
 
+<h3>설치 방법</h3>
+
+```diff
+
+1. vrpfx.sql DB덤프파일 실행
+
+2. configs/server-new.cfg 설정
+set mysql_connection_string "mysql://[사용자]:[비밀번호]@[DB주소]/[DB명]?multipleStatements=true&connectTimeout=30000"
+sv_licensekey [FiveM 라이센스 키]
+
+3. starter/ServerStart-New.cmd 실행
+
+```
+
 <h3>리얼월드서버 디렉토리 구조</h3>
 
 ```diff
